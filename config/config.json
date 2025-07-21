@@ -1,10 +1,10 @@
 {
   "server": {
     "port": 3000,
-    "host": "localhost"
+    "host": "0.0.0.0"
   },
   "forum": {
-    "baseUrl": "https://forum.bac0n.f5.si",
+    "baseUrl": "URL",
     "apiEndpoints": {
       "about": "/about.json",
       "users": "/directory_items.json?period=weekly"
