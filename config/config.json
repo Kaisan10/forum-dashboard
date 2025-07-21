@@ -1,0 +1,22 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "forum": {
+    "baseUrl": "https://forum.bac0n.f5.si",
+    "apiEndpoints": {
+      "about": "/about.json",
+      "users": "/directory_items.json?period=weekly"
+    }
+  },
+  "data": {
+    "collectInterval": "0 */30 * * * *",
+    "historyRetentionDays": 30,
+    "dataPath": "./data"
+  },
+  "ui": {
+    "title": "ダッシュボード",
+    "refreshInterval": 30000
+  }
+}

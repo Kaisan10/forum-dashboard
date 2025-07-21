@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォーラムダッシュボード</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="forumInfo" class="forum-info">
+            <div id="forumTitle" class="forum-title">読み込み中...</div>
+            <div id="forumDescription" class="forum-description">データを読み込んでいます</div>
+            <div class="meta-info">
+                <span id="creationDate">作成日: 読み込み中</span>
+                <span id="version">バージョン: 読み込み中</span>
+                <span id="forumUrl">URL: 読み込み中</span>
+            </div>
+        </div>
+
+        <div id="statsSection" class="stats-grid"></div>
+
+        <div class="charts-section">
+            <div class="chart-container">
+                <h3><i class="fa-solid fa-chart-line"></i> 統計推移</h3>
+                <canvas id="statsChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3><i class="fa-solid fa-users"></i> アクティビティ推移</h3>
+                <canvas id="activityChart"></canvas>
+            </div>
+        </div>
+
+        <div id="usersSection" class="users-section">
+            <div class="section-title"><i class="fa-solid fa-user"></i> 管理者とモデレーター</div>
+            <div id="usersList" class="users-grid"></div>
+        </div>
+        
+        <div class="header">
+            <div class="last-updated">
+                最終更新: <span id="lastUpdated">読み込み中...</span>
+            </div>
+        </div>
+    </div>
+    <script src="chart.js"></script>
+</body>
+</html>
